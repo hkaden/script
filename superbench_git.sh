@@ -176,18 +176,16 @@ print_speedtest() {
 	printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency" | tee -a $log
     speed_test '' 'Speedtest.net'
     speed_fast_com
-    speed_test '27377' 'Beijing 5G   CT'
-    speed_test '26352' 'Nanjing 5G   CT'
-    speed_test '17145' 'Hefei 5G     CT'
-	speed_test '27594' 'Guangzhou 5G CT'
-	speed_test '27154' 'TianJin 5G   CU'
-	speed_test '24447' 'Shanghai 5G  CU'
-	speed_test '26678' 'Guangzhou 5G CU'
-	speed_test '17184' 'Tianjin 5G   CM'
-	speed_test '26850' 'Wuxi 5G      CM'
-	speed_test '27249' 'Nanjing 5G   CM'
-	speed_test '26404' 'Hefei 5G     CM'
-	speed_test '28491' 'Changsha 5G  CM'
+    speed_test '1536' 'HongKong STC'
+    speed_test '25943' 'HongKong nextX'
+    speed_test '19036' 'HongKong SmarTone'
+	speed_test '18445' 'Taiwan Taipei Hinet'
+	speed_test '18452' 'Taiwan Taoyuan Hinet'
+	speed_test '18458' 'Taiwan Kaohsiung Hinet'
+	speed_test '21569' 'Japan Tokyo i3D'
+	speed_test '4515' 'China Shenzhen China Mobile'
+	speed_test '2054' 'Singapore Viewqwest'
+
 
 	 
 	rm -rf speedtest.py
@@ -197,9 +195,9 @@ print_speedtest_fast() {
 	printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency" | tee -a $log
     speed_test '' 'Speedtest.net'
     speed_fast_com
-    speed_test '27377' 'Beijing 5G   CT'
-	speed_test '24447' 'ShangHai 5G  CU'
-	speed_test '27249' 'Nanjing 5G   CM'
+	speed_test '1536' 'HongKong STC'
+	speed_test '18445' 'Taiwan Taipei Hinet'
+	speed_test '4515' 'China Shenzhen China Mobile'
 	 
 	rm -rf speedtest.py
 }
@@ -473,7 +471,7 @@ get_system_info() {
 print_intro() {
 	printf ' Superbench.sh -- https://www.oldking.net/350.html\n' | tee -a $log
 	printf " Mode  : \e${GREEN}%s\e${PLAIN}    Version : \e${GREEN}%s${PLAIN}\n" $mode_name 1.1.6 | tee -a $log
-	printf ' Usage : wget -qO- git.io/superbench.sh | bash\n' | tee -a $log
+	printf ' Usage : wget -qO- git.io/JeDUz | bash\n' | tee -a $log
 }
 
 sharetest() {
